@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waiter Life</title>
+</head>
+<body>
+    <form id="addForm">
+        <label for="price"> Choose Price :</label>
+        <input type="number" id="price" name="Price" min="20" required> <br>
+        <label for="dish"> Choose Dish :</label>
+        <input type="text" id="dish" name="Dish" required> <br>
+        <label for="table"> Choose a table : </label> 
+        <select name="table" id="table" > <br>
+            <option value="">select</option>
+            <option value="table1">Table1</option>
+            <option value="table2">Table2 </option>
+            <option value="table3">Table3</option>
+          </select> <br> <br>
+        <input type="submit" id="btn"  value="Add to Bill" >
+    </form>
+
+   
+    <h1> Orders </h1>
+    <ul id="tb1">  <h2> Table 1</h2> </ul>
+    <ul id="tb2">  <h2> Table 2</h2> </ul>
+    <ul id="tb3">  <h2> Table 3</h2> </ul>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
